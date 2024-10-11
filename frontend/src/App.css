@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  max-width: 600px;
+  margin: 20px auto; 
+  padding: 20px; 
+  background-color: #ffffff; /* Fundo branco para contraste */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.subtitulo {
+  color: #004080; /* Define a cor do subtítulo */
+  text-align: justify; /* Justifica o texto */
+  margin: 20px 0; /* Espaçamento acima e abaixo do subtítulo */
+  margin: 20px auto; 
+  padding: 20px; 
+  background-color: #ffffff; /* Fundo branco para contraste */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo do contêiner do formulário */
+.projeto-form {
+  max-width: 600px; /* Limita a largura do formulário */
+  margin: 20px auto; /* Centraliza o formulário na página */
+  padding: 20px; /* Adiciona espaço interno */
+  background-color: #ffffff; /* Fundo branco para contraste */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos do formulário */
+.projeto-form h1 {
+  text-align: center; /* Centraliza o título */
+  color: #004080; /* Azul escuro */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo dos rótulos e campos de entrada */
+label {
+  display: block; /* Faz o rótulo ocupar toda a linha */
+  margin-bottom: 10px; /* Espaço abaixo de cada rótulo */
+  font-weight: bold; /* Destaca os rótulos */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+  width: 100%; /* Campo ocupa 100% da largura */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-bottom: 15px; /* Espaço abaixo dos campos */
+  transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+/* Efeito ao focar nos campos de entrada */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #0066cc; /* Azul claro ao focar */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do botão de enviar */
+button[type="submit"] {
+  width: 100%; /* Botão ocupa 100% da largura */
+  padding: 12px; /* Aumenta o padding do botão */
+  background-color: #007bff; /* Azul */
+  color: white; /* Texto branco */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Cursor de ponteiro ao passar */
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+  transform: translateY(-2px); /* Eleva o botão levemente */
+}
+
+/* Estilo da textarea */
+textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+  height: 100px; /* Altura padrão */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .projeto-form {
+    padding: 15px; /* Menos padding em telas pequenas */
+  }
+  
+  button[type="submit"] {
+    font-size: 16px; /* Tamanho da fonte menor em telas pequenas */
+  }
+}
+
+
+/* Estilo para a lista de projetos */
+ul {
+  list-style-type: none; /* Remove os marcadores padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+/* Estilo dos itens da lista */
+li {
+  background-color: #ffffff; /* Cor de fundo branca */
+  border: 1px solid #004080; /* Borda azul escura */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 15px; /* Preenchimento interno */
+  margin-bottom: 15px; /* Espaçamento entre os itens */
+  display: flex; /* Flexbox para layout */
+  flex-direction: column; /* Alinha os itens na coluna */
+}
+
+/* Estilo para as informações do projeto */
+li div {
+  margin-bottom: 10px; /* Espaçamento entre as informações */
+}
+
+/* Estilo do título */
+li strong {
+  font-size: 1.2em; /* Aumenta o tamanho do título */
+  color: #004080; /* Cor do título */
+}
+
+/* Estilo da imagem */
+img {
+  max-width: 10%; /* Imagem responsiva */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-top: 10px; /* Espaçamento acima da imagem */
+}
+
+/* Estilo do container de botões */
+.button-container {
+  display: flex; /* Flexbox para botões */
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 10px; /* Espaçamento acima dos botões */
+}
+
+/* Estilo dos botões */
+button {
+  padding: 10px 15px; /* Preenchimento do botão */
+  border: none; /* Remove bordas padrão */
+  border-radius: 6px; /* Bordas arredondadas */
+  color: white; /* Texto branco */
+  cursor: pointer; /* Cursor de mão */
+  transition: background-color 0.3s ease; /* Transição suave para cor de fundo */
+}
+
+/* Cores dos botões */
+button.edit {
+  background-color: #4caf50; /* Verde */
+}
+
+button.delete {
+  background-color: #f44336; /* Vermelho */
+}
+
+button.visualizar {
+  background-color: #364ff4; /* Azul */
+}
+
+/* Efeitos ao passar o mouse */
+button:hover {
+  opacity: 0.9; /* Leve transparência ao passar o mouse */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Reduz o padding em telas pequenas */
+  }
+
+  form {
+    gap: 10px; /* Reduz o espaço entre os campos do formulário */
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  textarea,
+  select,
+  button[type="submit"] {
+    font-size: 14px; /* Diminui o tamanho da fonte */
+  }
+}

@@ -1,0 +1,69 @@
+/* src/components/Login.css */
+
+body {
+    background-color: #f0f4ff; /* Fundo azul claro para o corpo */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: white; /* Fundo branco para o formulário */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 50px auto; /* Centraliza o formulário na tela */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o formulário */
+}
+
+input {
+    width: 100%; /* Largura total dos campos */
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    border: 1px solid #007bff; /* Borda azul nos campos */
+    border-radius: 4px; /* Bordas arredondadas nos campos */
+    font-size: 16px; /* Tamanho da fonte nos campos */
+    transition: border-color 0.3s; /* Transição suave para a mudança de cor da borda */
+}
+
+input:focus {
+    border-color: #0056b3; /* Borda mais escura ao focar nos campos */
+    outline: none; /* Remove a borda padrão ao focar */
+}
+
+button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse sobre o botão */
+    font-size: 16px; /* Tamanho da fonte no botão */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor do fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    color: #007bff; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #007bff; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-top: 150px;
+}
+
+a {
+    display: block; /* Torna o link um bloco */
+    text-align: center; /* Centraliza o link */
+    margin-top: 20px; /* Espaçamento acima do link */
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.7s; /* Transição suave para a mudança de cor do link */
+}
